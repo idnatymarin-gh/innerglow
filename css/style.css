@@ -690,121 +690,198 @@ button {
 /* blog section end */
 
 
-/* client section start */
-
-.client_section {
-    width: 100%;
-    float: left;
-    padding-bottom: 160px;
+/* === Acceso Exclusivo === */
+.exclusive_section {
+  padding: 100px 0;
+  background: #fdfdfd;
 }
 
-.client_taital {
-    width: 100%;
-    font-size: 40px;
-    color: #131313;
-    font-weight: bold;
-    padding-top: 30px;
-    text-align: center;
+.exclusive_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
 }
 
-.client_section_2 {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #F5F4ED ;
-    box-shadow: 0px 1px 16px -6px;
-    border-radius: 30px;
-    padding: 50px 70px;
-    margin-top: 50px;
+.exclusive_title {
+  color: #272f38; /* Carbon */
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
-.client_main {
-    width: 100%;
-    display: flex;
+.exclusive_subtitle {
+  color: #ce8e00; /* Gold Flame */
+  font-size: 18px;
+  margin-bottom: 32px;
+  font-weight: 500;
 }
 
-.box_left {
-    width: 48%;
+.exclusive_col_title {
+  color: #272f38;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
-.box_right {
-    width: 48%;
-    float: right;
-    padding-top: 65px;
-    margin-left: 30px;
+/* Filtros */
+.exclusive_filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
 }
 
-.lorem_text {
-    width: 100%;
-    font-size: 16px;
-    text-align: center;
-    margin: 0px;
-    color: #0d0d0d;
-    border: 1px solid #0d0d0d;
-    padding: 90px 30px;
-    border-radius: 30px;
+.filter_button {
+  background: #eaeaea;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #272f38;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.client_taital_left {
-    width: 40%;
-    float: left;
+.filter_button.active,
+.filter_button:hover {
+  background: #009b74; /* Simply Green */
+  color: #fff;
 }
 
-.client_taital_right {
-    width: 60%;
-    float: left;
+/* Tarjetas */
+.class_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.client_img {
-    width: 100%;
-    float: left;
-    text-align: left;
+.class_card {
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: left;
+  background: #fff;
+  transition: transform 0.3s ease;
 }
 
-.quick_icon {
-    width: 100%;
-    float: left;
-    text-align: center;
-    padding-top: 30px;
+.class_card:hover {
+  transform: translateY(-2px);
 }
 
-.client_name {
-    width: 100%;
-    float: left;
-    font-size: 24px;
-    color: #012628;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: left;
-    padding-top: 53px;
-    padding-bottom: 0px;
+.class_hour {
+  color: #272f38;
+  font-size: 20px;
+  margin-bottom: 6px;
+  font-weight: 600;
 }
 
-.customer_text {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #085a57;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: left;
-    margin: 0px;
+.class_method {
+  color: #272f38;
+  font-size: 16px;
 }
 
-.carousel-indicators li {
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    background-color: #009b74 ;
-    bottom: -130px;
+.class_method span {
+  color: #009b74; /* Simply Green */
+  font-weight: 600;
 }
 
-.carousel-indicators .active {
-    background-color: #7fc6c2 ;
+.class_slots {
+  color: #7fc6c2; /* Blue Atoll */
+  font-weight: 500;
+  margin-top: 6px;
 }
 
+.class_slots.full {
+  color: #272f38;
+  font-weight: 600;
+}
 
-/* client section end */
+.exclusive_legend {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+}
+
+/* Derecha */
+.package_card {
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  padding: 24px 20px;
+  margin-bottom: 20px;
+  background: #fff;
+  text-align: left;
+}
+
+.package_card.premier {
+  border: 2px solid #ce8e00; /* Gold Flame */
+  background: #fff9ec;
+}
+
+.package_card h4 {
+  color: #272f38;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.prelaunch {
+  color: #7fc6c2; /* Blue Atoll */
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.limited {
+  background: #ce8e00;
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.price {
+  color: #272f38;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.cta_button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta_button.gold {
+  background: #ce8e00;
+  color: #272f38;
+}
+
+.cta_button.dark {
+  background: #272f38;
+  color: #fff;
+}
+
+.cta_button.gold:hover {
+  background: #e3a834;
+}
+
+.cta_button.dark:hover {
+  background: #009b74;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .exclusive_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 /* choose section start */
