@@ -344,7 +344,7 @@ button {
 }
 
 .top_nav li a:hover {
-  color: #7fc6c2;
+  color: #d3b29d;
 }
 
 
@@ -403,7 +403,7 @@ button {
 /* Botón sólido azul */
 .service_button {
   margin-top: 18px;
-  background-color: #7fc6c2;
+  background-color: #d3b29d;
   color: #fff;
   border: none;
   border-radius: 30px;
@@ -626,7 +626,7 @@ button {
     float: left;
     font-size: 16px;
     color: #F5F4ED ;
-    background-color: #009b74 ;
+    background-color: #214436  ;
     text-align: center;
     padding: 10px 0px;
     border-radius: 30px;
@@ -637,7 +637,7 @@ button {
 }
 
 .read_bt_1 a:hover {
-    background-color: #7fc6c2 ;
+    background-color: #d3b29d ;
     color: #F5F4ED ;
 }
 
@@ -800,7 +800,7 @@ button {
 
 .filter_button.active,
 .filter_button:hover {
-  background: #009b74;
+  background: #214436 ;
   color: #fff;
 }
 
@@ -833,7 +833,7 @@ button {
 }
 
 .class_schedule li {
-  color: #7fc6c2;
+  color: #d3b29d;
   font-size: 15px;
   margin-bottom: 4px;
 }
@@ -873,7 +873,7 @@ button {
 }
 
 .prelaunch {
-  color: #7fc6c2;
+  color: #d3b29d;
   font-size: 14px;
   margin-bottom: 6px;
   font-weight: 600;
@@ -955,7 +955,7 @@ button {
     margin-bottom: 20px;
     padding: 10px 15px;
     border: 0px;
-    border: 1px solid #7fc6c2  !important;
+    border: 1px solid #d3b29d  !important;
 }
 .massage-bt {
     width: 100%;
@@ -965,7 +965,7 @@ button {
     margin-bottom: 20px;
     padding: 10px 15px;
     border: 0px;
-    border: 1px solid #7fc6c2  !important;
+    border: 1px solid #d3b29d  !important;
 }
 .send_btn {
     width: 170px;
@@ -979,12 +979,12 @@ button {
     font-size: 20px;
     color: #F5F4ED ;
     border-radius: 30px;
-    background-color: #009b74 ;
+    background-color: #214436  ;
     padding: 7px;
 }
 .send_btn a:hover {
     color: #F5F4ED ;
-    background-color: #7fc6c2 ;
+    background-color: #d3b29d ;
 }
 /* contact section end */
 
@@ -1032,7 +1032,7 @@ button {
     width: 170px;
     float: left;
     font-size: 18px;
-    color: #7fc6c2 ;
+    color: #d3b29d ;
     background-color: transparent;
     padding: 5px 0px;
     text-align: center;
@@ -1092,7 +1092,7 @@ button {
 .copyright_section {
     width: 100%;
     float: left;
-    background-color: #009b74 ;
+    background-color: #214436  ;
     height: auto;
 }
 
