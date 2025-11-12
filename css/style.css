@@ -348,137 +348,137 @@ button {
 }
 
 
-
-
-/* === La Experiencia === */
-.services_section {
-  padding: 80px 0;
-  background-color: #fefefe;
+.experiencia {
+  padding: 100px 0;
+  background-color: #fffefc;
   text-align: center;
 }
 
-.services_title {
+.exp_titulo {
   font-size: 42px;
+  color: #1a1a1a;
   font-weight: 700;
-  color: #1A1A1A;
   margin-bottom: 16px;
 }
 
-.service_item img {
-  width: 100%;
-  max-width: 360px;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 20px;
-  transition: transform 0.4s ease;
-  cursor: pointer;
-  display: block;
+.exp_texto {
+  font-size: 18px;
+  color: #555;
+  max-width: 850px;
+  margin: 0 auto 60px;
+  line-height: 1.7;
 }
 
-.services_grid {
+.exp_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 60px;
   justify-items: center;
-  align-items: stretch; /* <— opcional */
+  align-items: start;
 }
 
-
-/* Contenedor puro y limpio */
-.service_item {
+.exp_bloque {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: none; /* sin fondo */
-  border: none;
-  box-shadow: none;
+  max-width: 340px;
 }
 
+.exp_img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  transition: transform 0.4s ease;
+}
 
-/* efecto elegante al pasar el mouse */
-.service_item img:hover {
+.exp_img:hover {
   transform: scale(1.03);
 }
 
-/* Botón sólido azul */
-.service_button {
+.exp_boton {
   margin-top: 18px;
-  background-color: #d3b29d;
-  color: #fff;
+  background: none;
   border: none;
-  border-radius: 30px;
-  padding: 12px 32px;
-  font-size: 15px;
+  color: #a98068;
+  font-size: 16px;
   font-weight: 600;
+  letter-spacing: 0.4px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
 }
 
-.service_button:hover {
-  background-color: #64aaa6;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(127,198,194,0.3);
+.exp_boton:hover {
+  color: #8e6b59;
 }
 
-/* Texto descriptivo ancho completo */
-.services_text {
-  font-size: 18px;
-  color: #4b4b4b;
-  max-width: 1200px;
-  margin: 0 auto 60px auto;
-  line-height: 1.6;
-  text-align: justify;
-  padding: 0 40px;
+.flecha {
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  margin-left: 6px;
+  margin-top: 2px;
+  transition: transform 0.3s ease;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .service_item img {
-    height: 220px;
-  }
-
-  .services_text {
-    font-size: 16px;
-    padding: 0 20px;
-  }
+.flecha.rotar {
+  transform: rotate(135deg);
 }
 
-/* Descripción oculta por defecto */
-.service_description {
-  max-width: 360px;
-  margin-top: 14px;
-  background: #f8f8f8;
-  border-radius: 14px;
-  padding: 16px 20px;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #333;
+.exp_contenido {
   display: none;
+  max-width: 340px;
+  margin-top: 12px;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
   text-align: justify;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-/* Cuando se activa */
-.service_description.show {
-  display: block;
   animation: fadeIn 0.4s ease;
 }
 
-/* CTA */
-.cta_text {
-  margin-top: 10px;
-  font-weight: 500;
-  color: #5fa9a3;
-  text-align: center;
+.exp_contenido.mostrar {
+  display: block;
 }
 
-/* Efecto suave al aparecer */
+.exp_cta {
+  margin-top: 90px;
+  background: #f8fdfa;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  padding: 30px 20px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 17px;
+  color: #4c9d95;
+  font-weight: 500;
+}
+
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-5px); }
+  from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+@media (max-width: 992px) {
+  .exp_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .exp_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
 
 
 /* --- SECCIÓN EL MÉTODO --- */
