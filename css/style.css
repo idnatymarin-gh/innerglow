@@ -294,15 +294,15 @@ button {
 }
 
 .banner_logo {
-  width: 450px;
+  width: 500px;
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
 
 .banner_title {
-  font-size: 64px;
-  font-weight: 700;
+  font-size: 60px;
+  font-weight: 400;
   margin-bottom: 15px;
   color: #fff;
 }
